@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ middlewares
 app.use(cors({
-  origin: "https://ishivastu.github.io/mylove/",
+  origin: "https://ishivastu.github.io",
   credentials: true
 }));
 
