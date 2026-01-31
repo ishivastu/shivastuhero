@@ -10,9 +10,14 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ middlewares
 app.use(cors({
-  origin: "https://ishivastu.github.io",
+  origin: [
+    "http://localhost:5173",
+    "https://mylove-plum-ten.vercel.app"
+  ],
   credentials: true
 }));
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
